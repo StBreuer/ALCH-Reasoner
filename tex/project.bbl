@@ -1,0 +1,221 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{https://doi.org/10.48550/arxiv.2206.07711}{misc}{}
+      \name{author}{6}{}{%
+        {{hash=de90ee33abcacf6a3fa7a176b6bb9aa4}{%
+           family={Alrabbaa},
+           familyi={A\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f5125f5ca0ee795599a1fc932b02eaf7}{%
+           family={Borgwardt},
+           familyi={B\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c964677ad47928085edc1fe2171f0e54}{%
+           family={Friese},
+           familyi={F\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6fd93f3b57feae7a6f74d66c0baec7f9}{%
+           family={Koopmann},
+           familyi={K\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=322c2bd7e9c3b75eeab0fc579630cf49}{%
+           family={Méndez},
+           familyi={M\bibinitperiod},
+           given={Julián},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b7be8248288384a9aee070842cc00e77}{%
+           family={Popovič},
+           familyi={P\bibinitperiod},
+           given={Alexej},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{fullhash}{43daab3d51a3b52891a37f699c4f26f3}
+      \strng{bibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authorbibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authornamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authorfullhash}{43daab3d51a3b52891a37f699c4f26f3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On the Eve of True Explainability for OWL Ontologies: Description Logic Proofs with Evee and Evonne (Extended Version)}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2206.07711
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2206.07711
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2206.07711
+      \endverb
+      \keyw{Logic in Computer Science (cs.LO),Artificial Intelligence (cs.AI),FOS: Computer and information sciences,FOS: Computer and information sciences}
+    \endentry
+    \entry{article}{article}{}
+      \name{author}{5}{}{%
+        {{hash=39d51d4026551ce1e356f1bf9cbd711c}{%
+           family={Frazier},
+           familyi={F\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+        {{hash=de6a8ebfa6084dc88765eb3308ff73b2}{%
+           family={mori},
+           familyi={m\bibinitperiod},
+           given={Angelo},
+           giveni={A\bibinitperiod},
+           prefix={rossi},
+           prefixi={r\bibinitperiod}}}%
+        {{hash=fa8042765f1fbd48700792c29b645650}{%
+           family={Dolin},
+           familyi={D\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7a4df46702f80bc125ea089888debff0}{%
+           family={Alschuler},
+           familyi={A\bibinitperiod},
+           given={Liora},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ea2e801fb3216a073d2aa42fe8564f23}{%
+           family={Huff},
+           familyi={H\bibinitperiod},
+           given={Stanley},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c9cde055547249a4cd3501d0d287c329}
+      \strng{fullhash}{6fb5736a21ffdd5d69dde8b3b57cfd4d}
+      \strng{bibnamehash}{c9cde055547249a4cd3501d0d287c329}
+      \strng{authorbibnamehash}{c9cde055547249a4cd3501d0d287c329}
+      \strng{authornamehash}{c9cde055547249a4cd3501d0d287c329}
+      \strng{authorfullhash}{6fb5736a21ffdd5d69dde8b3b57cfd4d}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Studies in health technology and informatics}
+      \field{month}{02}
+      \field{title}{The creation of an ontology of clinical document names}
+      \field{volume}{84}
+      \field{year}{2001}
+      \field{pages}{94\bibrangedash 8}
+      \range{pages}{5}
+    \endentry
+    \entry{KoopmannSchmidt15c}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1b6abcc61c5225631e7ae13cd62c9286}{%
+           family={Koopmann},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8dd2ef1d8177a013b67b042ebf807064}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{editor}{9}{}{%
+        {{hash=7542ef1fec424ff945a12e909713c5ae}{%
+           family={Dumontier},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c555110bd2e7855000683dbd6b094322}{%
+           family={Glimm},
+           familyi={G\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=45cd51c7c1d9565920235af483b12fa0}{%
+           family={Goncalves},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=86479e2c5be74768c2c0ffdfa751006b}{%
+           family={Horridge},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ef0f3657222383936ff90a8d33e4cbbb}{%
+           family={Jiménez-Ruiz},
+           familyi={J\bibinithyphendelim R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3bb56cec51ec7c6fe47b131a113cd368}{%
+           family={Matentzoglu},
+           familyi={M\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=aabc956b928d034da0e35605d5df2cda}{%
+           family={Parsia},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=06343cf09a0745362b3adaa9e5020022}{%
+           family={Stamou},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=016444bc9bf88e26854f563f88aa4c18}{%
+           family={Stoilos},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CEUR-WS.org}%
+      }
+      \strng{namehash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{fullhash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{bibnamehash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{authorbibnamehash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{authornamehash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{authorfullhash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{editorbibnamehash}{fd5cefe874ff92c3bf377cd4aacf87ee}
+      \strng{editornamehash}{fd5cefe874ff92c3bf377cd4aacf87ee}
+      \strng{editorfullhash}{ffba4ffafae433e40c979b15cfdd2013}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present the saturation-based reasoning system LETHE. LETHE is a tool that can be used for uniform interpolation, forgetting, TBox abduction and logical difference. To solve these problems, LETHE uses saturation-based reasoning to eliminate certain symbols from an ontology, such that entailments in the remaining vocabulary are preserved. This is known as forgetting or uniform interpolation. LETHE is an implementation of our forgetting methods for various expressive description logics, and can be used as a Java library and as a standalone tool for the mentioned reasoning tasks. We give a high level description of the calculi used by LETHE, describe the reasoning algorithm implemented in LETHE, and give an evaluation of the system on realistic ontologies.}
+      \field{booktitle}{Proceedings of the 4th International Workshop on OWL Reasoner Evaluation (ORE-2015)}
+      \field{series}{CEUR Workshop Proceedings}
+      \field{title}{{LETHE}: A Saturation-Based Tool for Non-Classical Reasoning}
+      \field{volume}{1387}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://www.cs.man.ac.uk/~schmidt/publications/KoopmannSchmidt15c.html
+      \endverb
+      \verb{url}
+      \verb http://www.cs.man.ac.uk/~schmidt/publications/KoopmannSchmidt15c.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
