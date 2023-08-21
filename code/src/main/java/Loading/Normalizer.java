@@ -5,6 +5,7 @@ import RuleHandling.Tupel;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.OWLObjectTransformer;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -28,8 +29,22 @@ public class Normalizer {
             ontology.remove(tuple.getX());
             ontology.addAxioms(tuple.getY());
         }
+
+        // add self inclusion of roles
+        Set<OWLObjectProperty> properties = ontology.getObjectPropertiesInSignature();
+        ontology.addAxioms(createPropertyInclusions(properties, dataFactory));
+
         return ontology;
 
+    }
+
+    private List<OWLAxiom> createPropertyInclusions(Set<OWLObjectProperty> properties, OWLDataFactory dataFactory){
+        List<OWLAxiom> newAxioms = new ArrayList<>();
+        for(OWLObjectProperty property: properties){
+            OWLAxiom newAxiom = dataFactory.getOWLSubObjectPropertyOfAxiom(property, property);
+            newAxioms.add(newAxiom);
+        }
+        return newAxioms;
     }
 
     private void updateOntology(Map<OWLClassExpression, OWLClassExpression> replacements, OWLDataFactory dataFactory, OWLOntology ontology){

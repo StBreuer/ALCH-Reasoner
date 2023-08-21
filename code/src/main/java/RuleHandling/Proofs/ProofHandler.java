@@ -18,7 +18,7 @@ public class ProofHandler {
 
     private Set<OWLClassExpression> activeClasses;
     private Set<Inference<OWLAxiom>> inferences = new HashSet<>();
-    private OWLClassExpression goal;
+    private OWLSubClassOfAxiom goal;
     private OWLAxiom finalConclusion;
     Set<OWLSubClassOfAxiom> activeAxioms = new HashSet<>();
     boolean goalReached = false;
@@ -55,11 +55,27 @@ public class ProofHandler {
         }
 
     }
-
+    public ProofHandler(OWLSubClassOfAxiom goal, Set<OWLAxiom> axioms){
+        setGoal(goal);
+        this.finalConclusion = finalConclusion;
+        addActiveAxioms(axioms);
+    }
     public ProofHandler(OWLSubClassOfAxiom goal){
         setGoal(goal);
     }
     public ProofHandler(){
+    }
+
+    public void addActiveAxioms(Set<OWLAxiom> axioms){
+        for (OWLAxiom axiom:axioms){
+            if(axiom instanceof OWLSubClassOfAxiom){
+                OWLSubClassOfAxiom subClassOfAxiom = (OWLSubClassOfAxiom)axiom;
+                this.activeAxioms.add(subClassOfAxiom);
+            }
+            else {
+                System.out.println("axiom is not a OWLSubClassOfAxiom");
+            }
+        }
     }
 
     public boolean isConclusion(OWLAxiom conclusion){
@@ -79,7 +95,7 @@ public class ProofHandler {
     public void setGoal(OWLSubClassOfAxiom goal){
         this.activeClasses = new HashSet<>();
         this.activeClasses.add(goal.getSubClass());
-        this.goal = goal.getSuperClass();
+        this.goal = goal;
     }
     public boolean isGoalReached(){
         return goalReached;
@@ -87,7 +103,7 @@ public class ProofHandler {
     private void setGoalReached(Inference<OWLAxiom> inference){
         if (inference.getConclusion() instanceof OWLSubClassOfAxiom){
             OWLSubClassOfAxiom axiom = (OWLSubClassOfAxiom)inference.getConclusion();
-            if(axiom.getSuperClass().equals(this.goal)){
+            if(axiom.equals(this.goal) ){
                 this.goalReached = true;
                 this.finalConclusion  = inference.getConclusion();
             }

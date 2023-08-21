@@ -3,7 +3,6 @@ import ProofPresentation.ProofRenderer;
 import Reasoner.ALCH_Reasoner;
 import com.opencsv.CSVWriter;
 import de.tu_dresden.inf.lat.evee.eliminationProofs.LetheBasedALCHProofGenerator;
-import de.tu_dresden.inf.lat.evee.proofs.data.Proof;
 import de.tu_dresden.inf.lat.evee.proofs.data.exceptions.ParsingException;
 import de.tu_dresden.inf.lat.evee.proofs.data.exceptions.ProofGenerationException;
 import de.tu_dresden.inf.lat.evee.proofs.interfaces.IInference;
@@ -23,6 +22,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class ProofTest {
 
@@ -30,12 +30,30 @@ public class ProofTest {
     OWLOntology ontology;
     OWLOntologyManager ontologyManager;
     @BeforeEach
-    void setUp() throws OWLOntologyCreationException {
+     void setUp() throws OWLOntologyCreationException {
         IRI iri = IRI.create("http://steffen.testOntology");
         ontologyManager = OWLManager.createOWLOntologyManager();
         ontology = ontologyManager.createOntology();
         dataFactory = ontologyManager.getOWLDataFactory();
     }
+
+    @Test
+    @DisplayName("longer proofs caused by normalisation example")
+    void longProofTest1() throws ProofGenerationException, IOException {
+        String inputPath = "src/main/resources/proves/exampleProof_longerProofs.json";
+        String outputJsonPath = "src/main/resources/proves/exampleProof_longerProofs_normalized";
+        String outputPNGPath = "src/main/resources/proves/exampleProof_longerProofs_normalized.png";
+        generateALCHProof(inputPath, outputJsonPath, outputPNGPath, ontology);
+    }
+    @Test
+    @DisplayName("longer proofs caused by normalisation example")
+    void longProofTest2() throws ProofGenerationException, IOException {
+        String inputPath = "src/main/resources/proves/longerProofExample2.json";
+        String outputJsonPath = "src/main/resources/proves/longerProofExample2_normalized";
+        String outputPNGPath = "src/main/resources/proves/longerProofExample2_normalized.png";
+        generateALCHProof(inputPath, outputJsonPath, outputPNGPath, ontology);
+    }
+
     @Test
     @DisplayName("No proof should be found test")
     void noProofTest() throws OWLOntologyCreationException, ProofGenerationException {
@@ -67,7 +85,41 @@ public class ProofTest {
         System.out.println("finished");
     }
 
+    @Test
+    @DisplayName("why no proof debug")
+    void finalDebug() throws ProofGenerationException, OWLOntologyCreationException {
+        IRI iri = IRI.create("http://steffen.testOntology");
+        OWLOntologyManager ontologyManager = OWLManager.createOWLOntologyManager();
+        OWLOntology ontology = ontologyManager.createOntology();
+        OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
+        OWLClass A = dataFactory.getOWLClass(iri+"#A");
+        OWLClass B = dataFactory.getOWLClass(iri+"#B");
+        OWLClass C = dataFactory.getOWLClass(iri+"#C");
+        OWLClass D = dataFactory.getOWLClass(iri+"#D");
+        OWLClass E = dataFactory.getOWLClass(iri+"#E");
+        OWLClass F = dataFactory.getOWLClass(iri+"#F");
 
+        OWLObjectIntersectionOf CnD = dataFactory.getOWLObjectIntersectionOf(C,D);
+        OWLObjectIntersectionOf CnE = dataFactory.getOWLObjectIntersectionOf(C,E);
+        OWLObjectUnionOf CnD_u_CnE = dataFactory.getOWLObjectUnionOf(CnD,CnE);
+
+        OWLSubClassOfAxiom AcB = dataFactory.getOWLSubClassOfAxiom(A,B);
+        OWLSubClassOfAxiom BcCnD_u_CnE = dataFactory.getOWLSubClassOfAxiom(B,CnD_u_CnE);
+        OWLSubClassOfAxiom CcF = dataFactory.getOWLSubClassOfAxiom(C,F);
+        OWLSubClassOfAxiom DcF = dataFactory.getOWLSubClassOfAxiom(D,F);
+        OWLSubClassOfAxiom EcF = dataFactory.getOWLSubClassOfAxiom(E,F);
+
+        OWLSubClassOfAxiom query = dataFactory.getOWLSubClassOfAxiom(A,F);
+
+        ontology.addAxioms(AcB,BcCnD_u_CnE,CcF,DcF,EcF);
+        ALCH_Reasoner reasoner = new ALCH_Reasoner();
+        reasoner.setOntology(ontology);
+        IProof<OWLAxiom> proof = reasoner.getTreeProve(query);
+        System.out.println("finished");
+
+
+
+    }
 
     @Test
     @DisplayName("basic proof test")
@@ -260,13 +312,14 @@ public class ProofTest {
     }
     @Test
     @DisplayName("test outputting alot of proof pics ")
-    void testGenerateProofPics() throws ProofGenerationException, IOException, OWLOntologyStorageException {
+    void testGenerateProofPics() throws ProofGenerationException, IOException, OWLOntologyStorageException, OWLOntologyCreationException {
         String basePath = "src/main/resources/proves/";
         String csvOutputPath = basePath + "FoundProofsQuerstionMark";
 
         CSVWriter csvWriter = new CSVWriter(new FileWriter(csvOutputPath));
 
-        for (int i = 2; i <= 138;i++){
+        for (int i = 13; i <= 138;i++){
+            setUp();
             if(i == 4 ){
                 continue;
             }
@@ -280,13 +333,36 @@ public class ProofTest {
         String paddedNumber = String.format("%05d", number);
         return paddedNumber;
     }
+    static void generateALCHProof(String taskPath, String outputJsonPath, String outputPNGPath, OWLOntology ontology) throws IOException, ProofGenerationException {
+        JsonProofParser parser = new JsonProofParser();
+        JsonProofWriter<OWLAxiom> writer = new JsonProofWriter<>();
 
+        IProof<OWLAxiom> proof = parser.fromFile(new File(taskPath));
+        OWLAxiom finalConclusion  = proof.getFinalConclusion();
+        Collection<IInference<OWLAxiom>> finalInference = proof.getInferences(finalConclusion);
+        finalInference.forEach(inference -> {
+            ontology.addAxioms(inference.getPremises());
+        });
+
+        ALCH_Reasoner reasoner = new ALCH_Reasoner();
+        reasoner.setOntology(ontology);
+        IProof<OWLAxiom> alchProof = reasoner.getTreeProve(finalConclusion);
+        System.out.println("finished");
+
+        writer.writeToFile(alchProof, outputJsonPath);
+        ProofRenderer.drawProof(alchProof, outputPNGPath);
+
+
+    }
     static void generateProof(String basePath, String taskNumber, OWLOntology ontology, OWLOntologyManager ontologyManager, CSVWriter csvWriter ) throws IOException, OWLOntologyStorageException, ProofGenerationException {
         String taskPath = basePath + "bioportal-alc-tasks/task" + taskNumber + ".json";
         String letheOutputPath = basePath + "Lethe_task" + taskNumber;
         String alchOutputPath  = basePath + "ALCH_task" + taskNumber;
         String lethePicPath = basePath + "Lehte_task" + taskNumber + ".png";
         String alchPicPath = basePath + "ALCH_task" + taskNumber + ".png";
+
+        String alchTimePath = basePath + "ALCH_time.txt";
+        String letheTimePath = basePath + "Lethe_time.txt";
 
 
         JsonProofParser parser = new JsonProofParser();
@@ -300,30 +376,72 @@ public class ProofTest {
         });
         LetheBasedALCHProofGenerator proofGenerator = new LetheBasedALCHProofGenerator();
         proofGenerator.setOntology(ontology);
-        IProof<OWLAxiom> letheProv = proofGenerator.getProof(finalConclusion);
+        //time
+        long startTime = System.nanoTime();
+
+        IProof<OWLAxiom> letheProof = proofGenerator.getProof(finalConclusion);
+
+        int letheNrAxioms = letheProof.getNumberOfAxioms();
+        int letheSizeLargestInferencePremise = letheProof.getSizeOfLargestInferencePremise();
+        int letheNrRuleApplications = letheProof.getNumberOfRuleApplications();
+
+
+        long endTime = System.nanoTime();
+        writeTimeToFile(letheTimePath, taskNumber, startTime, endTime, letheNrAxioms, letheSizeLargestInferencePremise, letheNrRuleApplications, true);
         System.out.println("lehte finished");
 
-        writer.writeToFile(letheProv, letheOutputPath);
+        writer.writeToFile(letheProof, letheOutputPath);
 
         ALCH_Reasoner reasoner = new ALCH_Reasoner();
         reasoner.setOntology(ontology);
-        IProof<OWLAxiom> alchProof = reasoner.getProof(finalConclusion);
+
+        //time
+        startTime = System.nanoTime();
+
+        IProof<OWLAxiom> alchProof = reasoner.getTreeProve(finalConclusion);
+
+        int alchNrAxioms = 0;
+        int alchSizeLargestInferencePremise = 0;
+        int alchNrRuleApplications = 0;
         if (alchProof != null){
-            String[] line  = {"task"+ taskNumber, "ALCH", "Found"};
-            csvWriter.writeNext(line);
+            alchNrAxioms = alchProof.getNumberOfAxioms();
+            alchSizeLargestInferencePremise = alchProof.getSizeOfLargestInferencePremise();
+            alchNrRuleApplications = alchProof.getNumberOfRuleApplications();
+        }
+
+
+        endTime = System.nanoTime();
+
+
+        if (alchProof != null){
+            writeTimeToFile(alchTimePath, taskNumber, startTime, endTime, alchNrAxioms, alchSizeLargestInferencePremise, alchNrRuleApplications, true);
+            //String[] line  = {"task"+ taskNumber, "ALCH", "Found"};
+            //csvWriter.writeNext(line);
         } else {
-            String[] line = {"task"+ taskNumber, "ALCH", "Not Found"};
-            csvWriter.writeNext(line);
+            //String[] line = {"task"+ taskNumber, "ALCH", "Not Found"};
+            //csvWriter.writeNext(line);
+            writeTimeToFile(alchTimePath, taskNumber, startTime, endTime, alchNrAxioms, alchSizeLargestInferencePremise, alchNrRuleApplications, false);
 
         }
         System.out.println("alch finished");
 
         writer.writeToFile(alchProof, alchOutputPath);
 
-        ProofRenderer.drawProof(letheProv, lethePicPath);
-        ProofRenderer.drawProof(alchProof, alchPicPath);
+//TODO add again
+        if (alchProof != null){
+            ProofRenderer.drawProof(letheProof, lethePicPath);
+            ProofRenderer.drawProof(alchProof, alchPicPath);
+        }
 
 
+    }
+
+    private static void writeTimeToFile(String path, String task, long start, long end, int nrAxioms, int sizeLargestInferencePremise, int nrRuleApplications, boolean valid) throws IOException {
+        FileWriter fileWriter = new FileWriter(path, true);
+        long executionTime = end - start;
+        executionTime = TimeUnit.NANOSECONDS.toMillis(executionTime);
+        fileWriter.write("Task " + task + " Time:" + executionTime + "ms " + "nrAxioms: " +nrAxioms + " sizeLargestInferencePremise: " +sizeLargestInferencePremise + " nrRuleApplications: "+ nrRuleApplications + ": " + valid +  "\n");
+        fileWriter.close();
     }
 
     @Test

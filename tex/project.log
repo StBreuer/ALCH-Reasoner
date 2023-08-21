@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.3.12)  12 JUN 2023 00:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2023.3.12)  3 AUG 2023 14:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/data/uni/ws2021-22/Theo_project/tex/project.tex
-(/data/uni/ws2021-22/Theo_project/tex/project.tex
+**/data/uni/ws2021-22/Theo_project/ALCH-Reasoner/tex/project.tex
+(/data/uni/ws2021-22/Theo_project/ALCH-Reasoner/tex/project.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-10> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -843,7 +843,13 @@ Package caption Info: float package is loaded.
 \@quotereset=\count476
  (./project.aux
 
-LaTeX Warning: Label `fig:label' multiply defined.
+LaTeX Warning: Label `rules:RPlusA' multiply defined.
+
+
+LaTeX Warning: Label `rules:RMinusA' multiply defined.
+
+
+LaTeX Warning: Label `rules:RNAnd' multiply defined.
 
 )
 \openout1 = `project.aux'.
@@ -907,38 +913,81 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 46.
- (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (8.52376pt too wide) in paragraph at lines 132--140
-\T1/cmr/m/n/10 A proof is a list of GCIs $\OML/cmm/m/it/10 A[]; [] ; A[]$\T1/cmr/m/n/10 , where for each $\OML/cmm/m/it/10 i \OMS/cmsy/m/n/10 2 f\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; [] n \OMS/cmsy/m/n/10 ^^@ \OT1/cmr/m/n/10 1\OMS/cmsy/m/n/10 g$ $f\OML/cmm/m/it/10 A[]; [] ; A[]\OMS/cmsy/m/n/10 g j[]\OT1/cmr/m/n/10 =
+ (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+Overfull \hbox (19.72234pt too wide) in paragraph at lines 68--78
+[][] \T1/cmr/m/n/10 Note that con-cept names
  []
 
-[2] [3] [4] [5] [6] [7]
-<pictures/ALCH_task00001.png, id=46, 2043.635pt x 1272.755pt>
-File: pictures/ALCH_task00001.png Graphic file (type png)
-<use pictures/ALCH_task00001.png>
-Package pdftex.def Info: pictures/ALCH_task00001.png  used on input line 412.
-(pdftex.def)             Requested size: 345.0pt x 214.85068pt.
-<pictures/Lethe_task00001.png, id=48, 510.90875pt x 849.1725pt>
-File: pictures/Lethe_task00001.png Graphic file (type png)
-<use pictures/Lethe_task00001.png>
-Package pdftex.def Info: pictures/Lethe_task00001.png  used on input line 420.
-(pdftex.def)             Requested size: 345.0pt x 573.4129pt.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+
+ []
+
+[2] [3] [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+
+ []
+
+[6] [7]
+Overfull \hbox (40.27953pt too wide) in paragraph at lines 481--492
+ [][] 
+ []
 
 
-LaTeX Warning: Float too large for page by 45.4129pt on input line 423.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (40.27953pt too wide) in paragraph at lines 500--512
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [8]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 448.
+<pictures/ALCH_task00001.png, id=48, 2043.635pt x 1272.755pt>
+File: pictures/ALCH_task00001.png Graphic file (type png)
+<use pictures/ALCH_task00001.png>
+Package pdftex.def Info: pictures/ALCH_task00001.png  used on input line 537.
+(pdftex.def)             Requested size: 345.0pt x 214.85068pt.
+<pictures/Lethe_task00001.png, id=50, 510.90875pt x 849.1725pt>
+File: pictures/Lethe_task00001.png Graphic file (type png)
+<use pictures/Lethe_task00001.png>
+Package pdftex.def Info: pictures/Lethe_task00001.png  used on input line 545.
+(pdftex.def)             Requested size: 207.0021pt x 344.04256pt.
+ [9]
+<pictures/longerProofExample2_normalized.png, id=54, 383.4325pt x 733.74126pt>
+File: pictures/longerProofExample2_normalized.png Graphic file (type png)
+<use pictures/longerProofExample2_normalized.png>
+Package pdftex.def Info: pictures/longerProofExample2_normalized.png  used on input line 591.
+(pdftex.def)             Requested size: 137.9979pt x 264.07947pt.
+<pictures/ALCH_task00000.png, id=55, 2116.90875pt x 1504.62125pt>
+File: pictures/ALCH_task00000.png Graphic file (type png)
+<use pictures/ALCH_task00000.png>
+Package pdftex.def Info: pictures/ALCH_task00000.png  used on input line 599.
+(pdftex.def)             Requested size: 276.00105pt x 196.15863pt.
+<pictures/ALCH_task00003.png, id=56, 5737.435pt x 1697.34125pt>
+File: pictures/ALCH_task00003.png Graphic file (type png)
+<use pictures/ALCH_task00003.png>
+Package pdftex.def Info: pictures/ALCH_task00003.png  used on input line 608.
+(pdftex.def)             Requested size: 345.0pt x 102.04327pt.
+<pictures/Lehte_task00003.png, id=57, 464.73625pt x 546.04pt>
+File: pictures/Lehte_task00003.png Graphic file (type png)
+<use pictures/Lehte_task00003.png>
+Package pdftex.def Info: pictures/Lehte_task00003.png  used on input line 615.
+(pdftex.def)             Requested size: 172.5pt x 202.67319pt.
+ [10 <./pictures/ALCH_task00001.png>] [11 <./pictures/Lethe_task00001.png>] [12 <./pictures/longerProofExample2_normalized.png> <./pictures/ALCH_task00000.png>] [13 <./pictures/ALCH_task00003.png> <./pictures/Lehte_task00003.png>]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 644.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Overfull \hbox (16.71967pt too wide) in paragraph at lines 449--449
+Overfull \hbox (16.71967pt too wide) in paragraph at lines 645--645
 \T1/cmtt/m/n/10 http : / / www . cs . man . ac . uk / ~schmidt / publications / KoopmannSchmidt15c .
  []
 
-[9 <./pictures/ALCH_task00001.png>] [10 <./pictures/Lethe_task00001.png>] (./project.aux)
+[14] (./project.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -947,18 +996,18 @@ Package logreq Info: Writing requests to 'project.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34127 strings out of 478238
- 769126 string characters out of 5850456
- 1465568 words of memory out of 5000000
- 51898 multiletter control sequences out of 15000+600000
- 482249 words of font info for 61 fonts, out of 8000000 for 9000
+ 34206 strings out of 478238
+ 771015 string characters out of 5850456
+ 1467816 words of memory out of 5000000
+ 51958 multiletter control sequences out of 15000+600000
+ 489442 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,10n,104p,1656b,1272s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on project.pdf (10 pages, 491683 bytes).
+ 100i,10n,104p,1670b,1288s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on project.pdf (14 pages, 1212290 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
+ 172 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

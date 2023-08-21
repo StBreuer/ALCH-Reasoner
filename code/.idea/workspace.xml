@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96302e82-0390-4acf-89e0-7ec08a9d1598" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Presentation/DDC_Logo_110x50_4C.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/DDC_Logo_110x50_4C.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/TU_Logo_SW.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/beamercolorthemetud.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/beamerfontthemetud.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/beamerinnerthemetud.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/beamerouterthemetud.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/beamerthemetud.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/pictures/ALCH_task00000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/pictures/ALCH_task00001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/pictures/ALCH_task00003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/pictures/Lehte_task00003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/pictures/Lehte_task00007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/pictures/Lethe_task00001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/pictures/longerProofExample2_normalized.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.aux" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.bbl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.bcf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.blg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.fdb_latexmk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.fls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.nav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.snm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.synctex.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.tex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/presentation.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/refs.bib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/tud-beamerstyle/DDC_Logo_110x50_4C.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/tud-beamerstyle/DDC_Logo_110x50_4C.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/tud-beamerstyle/beamercolorthemetud.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/tud-beamerstyle/beamerfontthemetud.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/tud-beamerstyle/beamerinnerthemetud.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/tud-beamerstyle/beamerouterthemetud.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/tud-beamerstyle/beamerthemetud.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/tud-beamerstyle/tudbeamermacros.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/tudbeamermacros.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Presentation/tudcolors.sty" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid6982" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00008.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00009.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00010.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00012.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00013.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00025.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00029.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_time.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00001.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00008.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00009.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00010.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00011.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00012.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00013.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00014.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00015.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00016.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00017.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00018.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00019.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00020.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00021.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00022.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00024.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00025.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00026.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00027.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00028.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00029.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00030.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00031.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00032.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00033.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/Lethe_time.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/exampleProof_longerProofs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/exampleProof_longerProofs_normalized.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/proves/longerProofExample2_normalized.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tex/.vscode/ltex.dictionary.en-US.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tex/pictures/ALCH_task00000.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tex/pictures/ALCH_task00003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tex/pictures/Lehte_task00003.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tex/pictures/Lehte_task00007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tex/pictures/longerProofExample2_normalized.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Loading/Normalizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Loading/Normalizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reasoner/ALCH_Reasoner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reasoner/ALCH_Reasoner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RuleHandling/Proofs/ProofHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RuleHandling/Proofs/ProofHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RuleHandling/ReasoningRules/ConjunctionNInferenceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RuleHandling/ReasoningRules/ConjunctionNInferenceRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RuleHandling/ReasoningRules/ExistsMinusInferenceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RuleHandling/ReasoningRules/ExistsMinusInferenceRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RuleHandling/matchVisitors/LeftExistToRoleVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RuleHandling/matchVisitors/LeftExistToRoleVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00001.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00001.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00002.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00002.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00003.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00003.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00005.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00005.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00006.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00006.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00007.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/proves/ALCH_task00007.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00005.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00005.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00006.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00006.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00007.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/proves/Lehte_task00007.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProofTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ProofTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/project.aux" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/project.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/project.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/project.bbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/project.bcf" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/project.bcf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/project.blg" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/project.blg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/project.fdb_latexmk" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/project.fdb_latexmk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/project.fls" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/project.fls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/project.log" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/project.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/project.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/project.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/project.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/project.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/project.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/project.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tex/refs.bib" beforeDir="false" afterPath="$PROJECT_DIR$/../tex/refs.bib" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2RkC9NVKYlN08fKh4wAT8FLwBe1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../shk/ontologyprov" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/proves" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ProofTest.testGenerateProofPics">
+    <configuration name="ProofTest.finalDebug" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ALCH-Reasoner" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProofTest" />
+      <option name="METHOD_NAME" value="finalDebug" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProofTest.longProofTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ALCH-Reasoner" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProofTest" />
+      <option name="METHOD_NAME" value="longProofTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProofTest.longProofTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ALCH-Reasoner" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProofTest" />
+      <option name="METHOD_NAME" value="longProofTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProofTest.testGenerateProofPics" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ALCH-Reasoner" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProofTest" />
+      <option name="METHOD_NAME" value="testGenerateProofPics" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProofTest.testGenerateProofPics" />
+        <item itemvalue="JUnit.ProofTest.finalDebug" />
+        <item itemvalue="JUnit.ProofTest.longProofTest2" />
+        <item itemvalue="JUnit.ProofTest.longProofTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96302e82-0390-4acf-89e0-7ec08a9d1598" name="Changes" comment="" />
+      <created>1687784548761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687784548761</updated>
+      <workItem from="1687784553035" duration="3265000" />
+      <workItem from="1687790106296" duration="198000" />
+      <workItem from="1690633863831" duration="2044000" />
+      <workItem from="1690901445717" duration="1899000" />
+      <workItem from="1690951158554" duration="5147000" />
+      <workItem from="1690957258523" duration="74000" />
+      <workItem from="1690959892555" duration="440000" />
+      <workItem from="1690963519762" duration="269000" />
+      <workItem from="1690964241630" duration="28000" />
+      <workItem from="1690965013612" duration="1176000" />
+      <workItem from="1690966386805" duration="3550000" />
+      <workItem from="1690970233601" duration="2722000" />
+      <workItem from="1690976201597" duration="229000" />
+      <workItem from="1690977076145" duration="10849000" />
+      <workItem from="1690994541793" duration="6571000" />
+      <workItem from="1691001994244" duration="1923000" />
+      <workItem from="1691031913258" duration="10229000" />
+      <workItem from="1691049557028" duration="318000" />
+      <workItem from="1691056520457" duration="1897000" />
+      <workItem from="1691405689333" duration="210000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ProofTest.java</url>
+          <line>431</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ProofTest.java</url>
+          <line>432</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Reasoner/ALCH_Reasoner.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Reasoner/ALCH_Reasoner.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Loading/NegativePositiveConceptsSeparatorVisitor.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Reasoner/ALCH_Reasoner.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RuleHandling/ReasoningRules/APlusInferenceRule.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RuleHandling/ReasoningRules/APlusInferenceRule.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Reasoner/ALCH_Reasoner.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Reasoner/ALCH_Reasoner.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Reasoner/ALCH_Reasoner.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Reasoner/ALCH_Reasoner.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/RuleHandling/Proofs/ProofHandler.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Reasoner.ALCH_Reasoner" memberName="proofHandler" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/code$ProofTest_testGenerateProofPics.ic" NAME="ProofTest.testGenerateProofPics Coverage Results" MODIFIED="1690998081109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

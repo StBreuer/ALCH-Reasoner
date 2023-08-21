@@ -9,10 +9,7 @@ import RuleHandling.matchVisitors.RoleInclusionVisitor;
 import Utils.FlatDataFactory;
 import org.semanticweb.owlapi.model.*;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 
 public class ExistsMinusInferenceRule implements InferenceRule{
@@ -21,11 +18,32 @@ public class ExistsMinusInferenceRule implements InferenceRule{
     private String ruleName = "ExistsMinus";
     //  Has r and A as keys since these are searched for in the active axioms
     private Map<Tupel<OWLObjectPropertyExpression, OWLClass>, List<Tupel<OWLSubObjectPropertyOfAxiom, OWLSubClassOfAxiom>>> matchMap;
+    // ontology axioms are actually needed here
+    private List<OWLSubClassOfAxiom> ontologyAxioms;
+
     public ExistsMinusInferenceRule(OWLOntology ontology, ProofHandler proofHandler){
         this.dataFactory = new FlatDataFactory(ontology.getOWLOntologyManager().getOWLDataFactory());
         this.proofHandler = proofHandler;
         setApplicableAxioms(ontology);
     }
+
+    public List<OWLSubClassOfAxiom> setOntologyAxioms(Set<OWLAxiom> ontologyAxioms){
+        this.ontologyAxioms = new ArrayList<>();
+
+        for (OWLAxiom axiom:ontologyAxioms){
+            if(axiom instanceof OWLSubClassOfAxiom){
+                OWLSubClassOfAxiom subClassOfAxiom = (OWLSubClassOfAxiom)axiom;
+                this.ontologyAxioms.add(subClassOfAxiom);
+            }
+            else {
+                System.out.println("axiom is not a OWLSubClassOfAxiom");
+            }
+        }
+        return this.ontologyAxioms;
+    }
+
+
+
     private void setApplicableAxioms(OWLOntology ontology){
         RoleInclusionVisitor roleInclusionVisitor = new RoleInclusionVisitor();
         Map<OWLObjectPropertyExpression,List<OWLSubObjectPropertyOfAxiom>> roleInclusions = roleInclusionVisitor.getRoleInclusions(ontology);
@@ -37,6 +55,7 @@ public class ExistsMinusInferenceRule implements InferenceRule{
     public boolean applyRule(){
         boolean newInference = false;
         List<OWLSubClassOfAxiom> activeAxioms = new ArrayList<>(this.proofHandler.getActiveAxioms());
+        activeAxioms.addAll(this.ontologyAxioms);
         ExistsMinusMatcherLeft leftMatcher = new ExistsMinusMatcherLeft();
         ExistsMinusMatcherRight rightMatcher = new ExistsMinusMatcherRight();
         for (Tupel<OWLObjectPropertyExpression, OWLClass> key : matchMap.keySet()){

@@ -19,6 +19,168 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{10.1007/978-3-031-10769-6_16}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=de90ee33abcacf6a3fa7a176b6bb9aa4}{%
+           family={Alrabbaa},
+           familyi={A\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=099ae1911eaaba9fbc167fa92195392a}{%
+           family={Baader},
+           familyi={B\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f5125f5ca0ee795599a1fc932b02eaf7}{%
+           family={Borgwardt},
+           familyi={B\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=909bcbaa875a05caefc094c453d1ca94}{%
+           family={Dachselt},
+           familyi={D\bibinitperiod},
+           given={Raimund},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6fd93f3b57feae7a6f74d66c0baec7f9}{%
+           family={Koopmann},
+           familyi={K\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=322c2bd7e9c3b75eeab0fc579630cf49}{%
+           family={Méndez},
+           familyi={M\bibinitperiod},
+           given={Julián},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=84b7b35db74b1eeaf3673f2f8ae34928}{%
+           family={Blanchette},
+           familyi={B\bibinitperiod},
+           given={Jasmin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ab515ad1305820ca510f8b0b45816202}{%
+           family={Kovács},
+           familyi={K\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8a6b66ad8074194f4a1369b26fc96ed8}{%
+           family={Pattinson},
+           familyi={P\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{fullhash}{18352d7a278ee7ca152e9c64aaf4f34a}
+      \strng{bibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authorbibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authornamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authorfullhash}{18352d7a278ee7ca152e9c64aaf4f34a}
+      \strng{editorbibnamehash}{5d5579b17ec8b464ca5bbaa2160dccfb}
+      \strng{editornamehash}{5d5579b17ec8b464ca5bbaa2160dccfb}
+      \strng{editorfullhash}{5d5579b17ec8b464ca5bbaa2160dccfb}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Explanations for description logic (DL) entailments provide important support for the maintenance of large ontologies. The ``justifications'' usually employed for this purpose in ontology editors pinpoint the parts of the ontology responsible for a given entailment. Proofs for entailments make the intermediate reasoning steps explicit, and thus explain how a consequence can actually be derived. We present an interactive system for exploring description logic proofs, called Evonne, which visualizes proofs of consequences for ontologies written in expressive DLs. We describe the methods used for computing those proofs, together with a feature called signature-based proof condensation. Moreover, we evaluate the quality of generated proofs using real ontologies.}
+      \field{booktitle}{Automated Reasoning}
+      \field{isbn}{978-3-031-10769-6}
+      \field{title}{Evonne: Interactive Proof Visualization for Description Logics (System Description)}
+      \field{year}{2022}
+      \field{pages}{271\bibrangedash 280}
+      \range{pages}{10}
+    \endentry
+    \entry{DBLP:conf/cade/AlrabbaaBBDKM22}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=de90ee33abcacf6a3fa7a176b6bb9aa4}{%
+           family={Alrabbaa},
+           familyi={A\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=099ae1911eaaba9fbc167fa92195392a}{%
+           family={Baader},
+           familyi={B\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f5125f5ca0ee795599a1fc932b02eaf7}{%
+           family={Borgwardt},
+           familyi={B\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=909bcbaa875a05caefc094c453d1ca94}{%
+           family={Dachselt},
+           familyi={D\bibinitperiod},
+           given={Raimund},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6fd93f3b57feae7a6f74d66c0baec7f9}{%
+           family={Koopmann},
+           familyi={K\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=322c2bd7e9c3b75eeab0fc579630cf49}{%
+           family={Méndez},
+           familyi={M\bibinitperiod},
+           given={Julián},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=84b7b35db74b1eeaf3673f2f8ae34928}{%
+           family={Blanchette},
+           familyi={B\bibinitperiod},
+           given={Jasmin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ab515ad1305820ca510f8b0b45816202}{%
+           family={Kovács},
+           familyi={K\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8a6b66ad8074194f4a1369b26fc96ed8}{%
+           family={Pattinson},
+           familyi={P\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{fullhash}{18352d7a278ee7ca152e9c64aaf4f34a}
+      \strng{bibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authorbibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authornamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authorfullhash}{18352d7a278ee7ca152e9c64aaf4f34a}
+      \strng{editorbibnamehash}{5d5579b17ec8b464ca5bbaa2160dccfb}
+      \strng{editornamehash}{5d5579b17ec8b464ca5bbaa2160dccfb}
+      \strng{editorfullhash}{5d5579b17ec8b464ca5bbaa2160dccfb}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Automated Reasoning - 11th International Joint Conference, {IJCAR} 2022, Haifa, Israel, August 8-10, 2022, Proceedings}
+      \field{series}{Lecture Notes in Computer Science}
+      \field{title}{Evonne: Interactive Proof Visualization for Description Logics (System Description)}
+      \field{volume}{13385}
+      \field{year}{2022}
+      \field{pages}{271\bibrangedash 280}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/978-3-031-10769-6\_16
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-031-10769-6\_16
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-031-10769-6%5C_16
+      \endverb
+    \endentry
     \entry{https://doi.org/10.48550/arxiv.2206.07711}{misc}{}
       \name{author}{6}{}{%
         {{hash=de90ee33abcacf6a3fa7a176b6bb9aa4}{%
@@ -61,6 +223,7 @@
       \strng{authorbibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
       \strng{authornamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
       \strng{authorfullhash}{43daab3d51a3b52891a37f699c4f26f3}
+      \field{extraname}{3}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labelnamesource}{author}

@@ -2,16 +2,6 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
-      <option name="id" value="localRepository" />
-      <option name="name" value="localRepository" />
-      <option name="url" value="$PROJECT_DIR$/../evee/lib" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="localRepository" />
-      <option name="name" value="localRepository" />
-      <option name="url" value="file://$PROJECT_DIR$/../evee" />
-    </remote-repository>
-    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
@@ -29,7 +19,7 @@
     <remote-repository>
       <option name="id" value="localRepository" />
       <option name="name" value="localRepository" />
-      <option name="url" value="file://$PROJECT_DIR$/../evee/lib" />
+      <option name="url" value="file://$PROJECT_DIR$/../../evee/lib" />
     </remote-repository>
   </component>
 </project>

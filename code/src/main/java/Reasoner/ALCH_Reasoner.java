@@ -32,17 +32,19 @@ public class ALCH_Reasoner implements IProofGenerator<OWLAxiom,OWLOntology> {
         Set<OWLAxiom> normalizedAxioms = normalizedOntology.getAxioms();
         System.out.println("normalization finished");
 
-        this.proofHandler = new ProofHandler();
-        this.proofHandler.setGoal(goal);
+        this.proofHandler = new ProofHandler(goal);
         APlusInferenceRule aPlus = new APlusInferenceRule(normalizedOntology, this.proofHandler);
         AMinusInferenceRule aMinus = new AMinusInferenceRule(normalizedOntology, this.proofHandler);
         ConjunctionNInferenceRule conjunctionN = new ConjunctionNInferenceRule(normalizedOntology, this.proofHandler);
         ExistPlusInferenceRule existPlus = new ExistPlusInferenceRule(normalizedOntology, this.proofHandler);
         ExistsBottomInferenceRule existsBottom = new ExistsBottomInferenceRule(normalizedOntology, this.proofHandler);
         ExistsMinusInferenceRule existsMinus = new ExistsMinusInferenceRule(normalizedOntology, this.proofHandler);
+        existsMinus.setOntologyAxioms(normalizedAxioms);
         ForAllInferenceRule forAll = new ForAllInferenceRule(normalizedOntology, this.proofHandler);
-
+        int depth = 0;
         while (notFinished(this.proofHandler)){
+            depth += 1;
+            System.out.println(depth);
             applyRule(aPlus);
             applyRule(aMinus);
             applyRule(conjunctionN);
@@ -50,6 +52,7 @@ public class ALCH_Reasoner implements IProofGenerator<OWLAxiom,OWLOntology> {
             applyRule(existsBottom);
             applyRule(existsMinus);
             applyRule(forAll);
+
         }
         System.out.println("reasoning finished");
 
@@ -64,7 +67,12 @@ public class ALCH_Reasoner implements IProofGenerator<OWLAxiom,OWLOntology> {
 
     public IProof<OWLAxiom> getTreeProve(OWLAxiom axiom) throws ProofGenerationException {
         IProof<OWLAxiom> proof = this.getProof(axiom);
-        return TreeProofGenerator.getMinimalDepthProof(proof);
+        if (this.proofHandler.isGoalReached()){
+            return TreeProofGenerator.getMinimalTreeSizeProof(proof);
+        }else {
+            return null;
+        }
+        //return TreeProofGenerator.getMinimalDepthProof(proof);
 
         /*
         List<IInference<OWLAxiom>> inferences = this.generateProofBFS(proof, axiom);
@@ -109,7 +117,7 @@ public class ALCH_Reasoner implements IProofGenerator<OWLAxiom,OWLOntology> {
     public IProof<OWLAxiom> getProof(OWLAxiom axiom) throws ProofGenerationException {
         if (axiom instanceof OWLSubClassOfAxiom){
             try {
-                reason(this.ontology,(OWLSubClassOfAxiom) axiom);
+                boolean resultFound = reason(this.ontology,(OWLSubClassOfAxiom) axiom);
             } catch (OWLOntologyCreationException e) {
                 e.printStackTrace();
             }

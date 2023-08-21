@@ -2347,9 +2347,15 @@
     <bcf:citekey order="1">article</bcf:citekey>
     <bcf:citekey order="2">https://doi.org/10.48550/arxiv.2206.07711</bcf:citekey>
     <bcf:citekey order="3">KoopmannSchmidt15c</bcf:citekey>
-    <bcf:citekey order="4">article</bcf:citekey>
-    <bcf:citekey order="5">https://doi.org/10.48550/arxiv.2206.07711</bcf:citekey>
+    <bcf:citekey order="4">10.1007/978-3-031-10769-6_16</bcf:citekey>
+    <bcf:citekey order="5">article</bcf:citekey>
     <bcf:citekey order="6">KoopmannSchmidt15c</bcf:citekey>
+    <bcf:citekey order="7">DBLP:conf/cade/AlrabbaaBBDKM22</bcf:citekey>
+    <bcf:citekey order="8">article</bcf:citekey>
+    <bcf:citekey order="9">https://doi.org/10.48550/arxiv.2206.07711</bcf:citekey>
+    <bcf:citekey order="10">KoopmannSchmidt15c</bcf:citekey>
+    <bcf:citekey order="11">10.1007/978-3-031-10769-6_16</bcf:citekey>
+    <bcf:citekey order="12">DBLP:conf/cade/AlrabbaaBBDKM22</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

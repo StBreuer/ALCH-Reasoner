@@ -13,6 +13,7 @@ public class LeftExistToRoleVisitor extends MatchVisitor{
     private Map<Tupel<OWLObjectPropertyExpression, OWLClass>, List<Tupel<OWLSubObjectPropertyOfAxiom, OWLSubClassOfAxiom>>> matchMap;
     private Map<OWLObjectPropertyExpression, List<OWLSubObjectPropertyOfAxiom>> roleMap;
     private OWLObjectPropertyExpression currentProperty;
+    private boolean isApplicable = false;
     private OWLSubClassOfAxiom currentAxiom;
 
 
@@ -20,6 +21,7 @@ public class LeftExistToRoleVisitor extends MatchVisitor{
         this.matchMap = new HashMap<>();
         this.roleMap = roleMap;
         for (OWLAxiom axiom : ontology.getAxioms()){
+            isApplicable = false;
             axiom.accept(this);
         }
         return this.matchMap;
@@ -28,7 +30,7 @@ public class LeftExistToRoleVisitor extends MatchVisitor{
     @Override
     public void visit(OWLClass ce) {
         //Shows that axiom was not applicable TODO maybe handle differently!?!
-        if(this.currentProperty == null){
+        if(this.currentProperty == null || !this.isApplicable){
             return;
         }
         for (OWLSubObjectPropertyOfAxiom roleAxiom : this.roleMap.get(this.currentProperty)) {
@@ -56,6 +58,7 @@ public class LeftExistToRoleVisitor extends MatchVisitor{
 
     @Override
     public void visit(OWLObjectSomeValuesFrom ce) {
+        this.isApplicable = true;
         if (this.roleMap.containsKey(ce.getProperty())){
             this.currentProperty = ce.getProperty();
             ce.getFiller().accept(this);

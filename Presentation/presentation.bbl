@@ -1,0 +1,295 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{10.1007/978-3-031-10769-6_16}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=de90ee33abcacf6a3fa7a176b6bb9aa4}{%
+           family={Alrabbaa},
+           familyi={A\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=099ae1911eaaba9fbc167fa92195392a}{%
+           family={Baader},
+           familyi={B\bibinitperiod},
+           given={Franz},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f5125f5ca0ee795599a1fc932b02eaf7}{%
+           family={Borgwardt},
+           familyi={B\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=909bcbaa875a05caefc094c453d1ca94}{%
+           family={Dachselt},
+           familyi={D\bibinitperiod},
+           given={Raimund},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6fd93f3b57feae7a6f74d66c0baec7f9}{%
+           family={Koopmann},
+           familyi={K\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=322c2bd7e9c3b75eeab0fc579630cf49}{%
+           family={Méndez},
+           familyi={M\bibinitperiod},
+           given={Julián},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=84b7b35db74b1eeaf3673f2f8ae34928}{%
+           family={Blanchette},
+           familyi={B\bibinitperiod},
+           given={Jasmin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ab515ad1305820ca510f8b0b45816202}{%
+           family={Kovács},
+           familyi={K\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8a6b66ad8074194f4a1369b26fc96ed8}{%
+           family={Pattinson},
+           familyi={P\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{fullhash}{18352d7a278ee7ca152e9c64aaf4f34a}
+      \strng{bibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authorbibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authornamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authorfullhash}{18352d7a278ee7ca152e9c64aaf4f34a}
+      \strng{editorbibnamehash}{5d5579b17ec8b464ca5bbaa2160dccfb}
+      \strng{editornamehash}{5d5579b17ec8b464ca5bbaa2160dccfb}
+      \strng{editorfullhash}{5d5579b17ec8b464ca5bbaa2160dccfb}
+      \field{extraname}{1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Explanations for description logic (DL) entailments provide important support for the maintenance of large ontologies. The ``justifications'' usually employed for this purpose in ontology editors pinpoint the parts of the ontology responsible for a given entailment. Proofs for entailments make the intermediate reasoning steps explicit, and thus explain how a consequence can actually be derived. We present an interactive system for exploring description logic proofs, called Evonne, which visualizes proofs of consequences for ontologies written in expressive DLs. We describe the methods used for computing those proofs, together with a feature called signature-based proof condensation. Moreover, we evaluate the quality of generated proofs using real ontologies.}
+      \field{booktitle}{Automated Reasoning}
+      \field{isbn}{978-3-031-10769-6}
+      \field{title}{Evonne: Interactive Proof Visualization for Description Logics (System Description)}
+      \field{year}{2022}
+      \field{pages}{271\bibrangedash 280}
+      \range{pages}{10}
+    \endentry
+    \entry{https://doi.org/10.48550/arxiv.2206.07711}{misc}{}
+      \name{author}{6}{}{%
+        {{hash=de90ee33abcacf6a3fa7a176b6bb9aa4}{%
+           family={Alrabbaa},
+           familyi={A\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=f5125f5ca0ee795599a1fc932b02eaf7}{%
+           family={Borgwardt},
+           familyi={B\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c964677ad47928085edc1fe2171f0e54}{%
+           family={Friese},
+           familyi={F\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=6fd93f3b57feae7a6f74d66c0baec7f9}{%
+           family={Koopmann},
+           familyi={K\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=322c2bd7e9c3b75eeab0fc579630cf49}{%
+           family={Méndez},
+           familyi={M\bibinitperiod},
+           given={Julián},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b7be8248288384a9aee070842cc00e77}{%
+           family={Popovič},
+           familyi={P\bibinitperiod},
+           given={Alexej},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{fullhash}{43daab3d51a3b52891a37f699c4f26f3}
+      \strng{bibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authorbibnamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authornamehash}{8114cbf77145723d3baa9ef0fdb6cfee}
+      \strng{authorfullhash}{43daab3d51a3b52891a37f699c4f26f3}
+      \field{extraname}{2}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{On the Eve of True Explainability for OWL Ontologies: Description Logic Proofs with Evee and Evonne (Extended Version)}
+      \field{year}{2022}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2206.07711
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2206.07711
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2206.07711
+      \endverb
+      \keyw{Logic in Computer Science (cs.LO),Artificial Intelligence (cs.AI),FOS: Computer and information sciences,FOS: Computer and information sciences}
+    \endentry
+    \entry{KoopmannSchmidt15c}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1b6abcc61c5225631e7ae13cd62c9286}{%
+           family={Koopmann},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8dd2ef1d8177a013b67b042ebf807064}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{editor}{9}{}{%
+        {{hash=7542ef1fec424ff945a12e909713c5ae}{%
+           family={Dumontier},
+           familyi={D\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c555110bd2e7855000683dbd6b094322}{%
+           family={Glimm},
+           familyi={G\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=45cd51c7c1d9565920235af483b12fa0}{%
+           family={Goncalves},
+           familyi={G\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=86479e2c5be74768c2c0ffdfa751006b}{%
+           family={Horridge},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ef0f3657222383936ff90a8d33e4cbbb}{%
+           family={Jiménez-Ruiz},
+           familyi={J\bibinithyphendelim R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3bb56cec51ec7c6fe47b131a113cd368}{%
+           family={Matentzoglu},
+           familyi={M\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=aabc956b928d034da0e35605d5df2cda}{%
+           family={Parsia},
+           familyi={P\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=06343cf09a0745362b3adaa9e5020022}{%
+           family={Stamou},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=016444bc9bf88e26854f563f88aa4c18}{%
+           family={Stoilos},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CEUR-WS.org}%
+      }
+      \strng{namehash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{fullhash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{bibnamehash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{authorbibnamehash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{authornamehash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{authorfullhash}{5a1b16dfe54ebb285e79c2be0b9e4be2}
+      \strng{editorbibnamehash}{fd5cefe874ff92c3bf377cd4aacf87ee}
+      \strng{editornamehash}{fd5cefe874ff92c3bf377cd4aacf87ee}
+      \strng{editorfullhash}{ffba4ffafae433e40c979b15cfdd2013}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present the saturation-based reasoning system LETHE. LETHE is a tool that can be used for uniform interpolation, forgetting, TBox abduction and logical difference. To solve these problems, LETHE uses saturation-based reasoning to eliminate certain symbols from an ontology, such that entailments in the remaining vocabulary are preserved. This is known as forgetting or uniform interpolation. LETHE is an implementation of our forgetting methods for various expressive description logics, and can be used as a Java library and as a standalone tool for the mentioned reasoning tasks. We give a high level description of the calculi used by LETHE, describe the reasoning algorithm implemented in LETHE, and give an evaluation of the system on realistic ontologies.}
+      \field{booktitle}{Proceedings of the 4th International Workshop on OWL Reasoner Evaluation (ORE-2015)}
+      \field{series}{CEUR Workshop Proceedings}
+      \field{title}{{LETHE}: A Saturation-Based Tool for Non-Classical Reasoning}
+      \field{volume}{1387}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://www.cs.man.ac.uk/~schmidt/publications/KoopmannSchmidt15c.html
+      \endverb
+      \verb{url}
+      \verb http://www.cs.man.ac.uk/~schmidt/publications/KoopmannSchmidt15c.html
+      \endverb
+    \endentry
+    \entry{10.5555/2283516.2283580}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=23ef3dd26076046d27405aae8fe84755}{%
+           family={Simančı́k},
+           familyi={S\bibinitperiod},
+           given={František},
+           giveni={F\bibinitperiod}}}%
+        {{hash=b1c8f69da1371e0e4ad5ea55a78c074e}{%
+           family={Kazakov},
+           familyi={K\bibinitperiod},
+           given={Yevgeny},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fb33c2b55c178be2daf66ac89cdac9cc}{%
+           family={Horrocks},
+           familyi={H\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Barcelona, Catalonia, Spain}%
+      }
+      \list{publisher}{1}{%
+        {AAAI Press}%
+      }
+      \strng{namehash}{b5cc52cd121bf9a85b685d9e422c339d}
+      \strng{fullhash}{b5cc52cd121bf9a85b685d9e422c339d}
+      \strng{bibnamehash}{b5cc52cd121bf9a85b685d9e422c339d}
+      \strng{authorbibnamehash}{b5cc52cd121bf9a85b685d9e422c339d}
+      \strng{authornamehash}{b5cc52cd121bf9a85b685d9e422c339d}
+      \strng{authorfullhash}{b5cc52cd121bf9a85b685d9e422c339d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Consequence-based ontology reasoning procedures have so far been known only for Horn ontology languages. A difficulty in extending such procedures is that non-Horn axioms seem to require reasoning by case, which causes non-determinism in tableau-based procedures. In this paper we present a consequence-based procedure for ALCH that overcomes this difficulty by using rules similar to ordered resolution to deal with disjunctive axioms in a deterministic way; it retains all the favourable attributes of existing consequence-based procedures, such as goal-directed "one pass" classification, optimal worst-case complexity, and "pay-as-you-go" behaviour. Our preliminary empirical evaluation suggests that the procedure scales well to non-Horn ontologies.}
+      \field{booktitle}{Proceedings of the Twenty-Second International Joint Conference on Artificial Intelligence - Volume Volume Two}
+      \field{isbn}{9781577355144}
+      \field{series}{IJCAI'11}
+      \field{title}{Consequence-Based Reasoning beyond Horn Ontologies}
+      \field{year}{2011}
+      \field{pages}{1093\bibrangedash 1098}
+      \range{pages}{6}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
